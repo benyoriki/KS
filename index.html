@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#08131f" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<title>Kartu Stock Online V3 – Depo Parung</title>
+<script>(function(){try{var t=localStorage.getItem("ks_theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}})()</script>
+<link rel="icon" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<button id="themeBtnL" class="tbtn" type="button" aria-label="Ganti tema"></button>
+<section id="login">
+ <div class="lg">
+  <div class="lg-hero">
+   <span class="lg-orb o1" aria-hidden="true"></span><span class="lg-orb o2" aria-hidden="true"></span><span class="lg-grid" aria-hidden="true"></span>
+   <div class="lg-in-hero">
+    <div class="lg-brand"><span class="lg-logo"><img src="logo.svg" width="30" height="30" alt=""></span><span class="lg-bn">Depo Parung</span><em class="lbeta">UJI COBA</em></div>
+    <h1>Kartu Stock<br>Online <span class="lg-v">V3</span></h1>
+    <p>Catat barang masuk dan keluar depo dengan mudah, dari admin sampai gudang.</p>
+    <ul class="lg-feat"><li><span data-ic="chart"></span>Stock real time</li><li><span data-ic="bell"></span>Notifikasi otomatis</li><li><span data-ic="shield"></span>Jejak audit lengkap</li></ul>
+    <ol class="lg-flow">
+     <li><b>Admin</b><span>input BKB / BTB, saldo, supplier, mutasi</span></li>
+     <li><b>Checker</b><span>cek fisik, muat barang, terima barang</span></li>
+     <li><b>KA Gudang</b><span>pantau, closing, koreksi, audit</span></li>
+    </ol>
+   </div>
+  </div>
+  <form id="lf" class="lg-card" autocomplete="on">
+   <div class="lg-ch"><h2>Selamat datang</h2><p>Masuk untuk melanjutkan ke Kartu Stock.</p></div>
+   <label for="lu">Username</label>
+   <div class="lg-field"><span class="lg-fi" data-ic="user"></span><input id="lu" placeholder="Masukkan username" autocomplete="username" autocapitalize="none" spellcheck="false" required></div>
+   <label for="lp">Password</label>
+   <div class="lg-field pw"><span class="lg-fi" data-ic="lock"></span><input id="lp" type="password" placeholder="Masukkan password" autocomplete="current-password" required><button type="button" id="pwt" aria-label="Tampilkan password"></button></div>
+   <button class="btn big2 lg-go"><span>Masuk</span><span class="lg-arr" data-ic="arrow"></span></button>
+   <div class="ldiv"><span>Akses cepat · uji coba</span></div>
+   <div id="demo" class="lg-roles"></div>
+   <small class="warn">Versi uji coba: login hanya simulasi (data tersimpan di perangkat ini), bukan keamanan produksi.</small>
+  </form>
+ </div>
+</section>
+<div id="shell" hidden>
+ <aside id="side"></aside><div id="scrim" hidden></div>
+ <div id="main">
+  <header><button id="burger" aria-label="Buka menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+   <img class="hlogo" src="logo.svg" width="32" height="32" alt="">
+   <div class="ht"><b id="ttl"></b><small id="sub"></small></div>
+   <button id="bell" class="bell" type="button" aria-label="Notifikasi" aria-expanded="false" aria-controls="npanel" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg><i id="bn" hidden>0</i></button>
+   <button id="themeBtn" class="tbtn" type="button" aria-label="Ganti tema terang / gelap"></button>
+   <button id="helpBtn" class="tbtn" type="button" aria-label="Bantuan"></button>
+   <div class="who"><span class="av2" id="av"></span><div class="wn"><b id="who"></b><small id="whoRole"></small></div><button class="btn s ghost" id="out">Keluar</button></div></header>
+  <div id="testbar" class="testbar" hidden></div>
+  <main id="view"></main>
+ </div>
+ <nav id="bnav" aria-label="Navigasi utama"></nav>
+ <div id="nscrim" hidden></div><div id="npanel" role="dialog" aria-label="Notifikasi" hidden></div>
+</div>
+<div id="modal" hidden></div><div id="toast" role="status"></div>
+<script src="refcodes.js"></script><script src="products.js"></script><script src="storage.js"></script><script src="rbac.js"></script><script src="calc.js"></script><script src="svc.js"></script><script src="ui.js"></script><script src="core.js"></script><script src="forms.js"></script><script src="depoupd.js"></script><script src="dash.js"></script><script src="pages.js"></script><script src="app.js"></script>
+</body></html>
