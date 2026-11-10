@@ -60,3 +60,8 @@ Key baru: `ks_docs`, `ks_openings`, `ks_notifs`. Data V2 tidak dihapus (backup o
 
 ## Struktur file (V3.9)
 Semua file berada di satu level, tanpa folder — langsung upload semua isi ke root repository GitHub, lalu aktifkan GitHub Pages (Settings → Pages → Branch `main` / root). Buka `index.html`.
+
+## V3.11 — kompatibilitas & performa
+- Tanpa `color-mix`, `backdrop-filter`, `filter: blur`, dan `inset` (diberi cadangan warna biasa) → tampilan sama di Chrome/Firefox lama (Windows 7).
+- Bayangan lebih ringan, tanpa efek blur; JavaScript tetap gaya ES5.
+- Login muat penuh di laptop 1366×768.
